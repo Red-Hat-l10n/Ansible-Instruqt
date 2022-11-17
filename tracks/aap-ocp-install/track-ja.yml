@@ -1,0 +1,27 @@
+slug: aap-ocp-install
+id: mxin1twsyurv
+type: track
+title: Operator を使用した OpenShift への Ansible Automation Platform のインストール
+description: |
+  ## 目的
+  
+  Operator を使用した OpenShift への Ansible Automation Platform (AAP)のインストール
+  
+  ## 詳細情報
+  
+  * AAP Operator のインストール
+  * 自動化コントローラーのインストール
+  * Automation Hub のインストール
+  * 新規インストールした AAP 環境にアクセスします。
+icon: ""
+level: beginner
+tags:
+- ansible
+- openshift
+owner: redhat
+developers:
+- rlopez@redhat.com
+private: false
+published: true
+show_timer: true
+checksum: "13023472960821117513"
