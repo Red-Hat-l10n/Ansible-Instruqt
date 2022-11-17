@@ -17,7 +17,7 @@ title: AAP Operator のインストール
 - title: ターミナル 1
   type: terminal
   hostname: crc
-- Web コンソール
+- title: Web コンソール
   type: website
   url: https://console-openshift-console.crc-gh9wd-master-0.crc.${_SANDBOX_ID}.instruqt.io
   new_window: true
@@ -26,7 +26,7 @@ title: AAP Operator のインストール
   hostname: crc
   path: /root
 難易度: 基本
-timelimit: 600
+timelimit: 300
 ---
 このチャレンジでは、OpenShift クラスターダッシュボードにログインし、Ansible Automation Platform Operator をインストールします。
 
