@@ -4,7 +4,7 @@ id: nudioocrzqv2
 type: challenge
 title: 自動化コントローラーダッシュボードへのアクセス
 タブ:
-- Web コンソール
+- title: Web コンソール
   type: website
   url: https://console-openshift-console.crc-gh9wd-master-0.crc.${_SANDBOX_ID}.instruqt.io
   new_window: true
@@ -15,7 +15,7 @@ title: 自動化コントローラーダッシュボードへのアクセス
   type: terminal
   hostname: ansible
 難易度: 基本
-timelimit: 600
+timelimit: 300
 ---
 このチャレンジでは、新たにインストールした自動化コントローラー環境にアクセスします。
 
