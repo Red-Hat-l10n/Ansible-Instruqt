@@ -4,7 +4,7 @@ id: ekswy2qc5v6t
 type: challenge
 title: Automation Hub ダッシュボードへのアクセス
 タブ:
-- Web コンソール
+- title: Web コンソール
   type: website
   hostname: crc
   url: https://console-openshift-console.crc-gh9wd-master-0.crc.${_SANDBOX_ID}.instruqt.io
@@ -13,7 +13,7 @@ title: Automation Hub ダッシュボードへのアクセス
   type: terminal
   hostname: crc
 難易度: 基本
--T timelimit
+timelimit: 300
 ---
 このチャレンジでは、新たにインストールした Automation Hub 環境にアクセスします。
 
