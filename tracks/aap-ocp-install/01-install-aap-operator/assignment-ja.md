@@ -6,7 +6,7 @@ title: AAP Operator のインストール
 注記:
 - type: text
   コンテンツ: |-
-    # ようこそ !
+    # welcome
 
     Red Hat OpenShift への Ansible Automation Platform (AAP)のインストール方法については、こちらをご参照ください。
 
@@ -17,7 +17,7 @@ title: AAP Operator のインストール
 - title: ターミナル 1
   type: terminal
   hostname: crc
-- title: Web コンソール
+- Web コンソール
   type: website
   url: https://console-openshift-console.crc-gh9wd-master-0.crc.${_SANDBOX_ID}.instruqt.io
   new_window: true
@@ -30,7 +30,7 @@ timelimit: 600
 ---
 このチャレンジでは、OpenShift クラスターダッシュボードにログインし、Ansible Automation Platform Operator をインストールします。
 
-Ansible Automation Platform Operator をインストールすると、Red Hat OpenShift に Ansible Automation Platform コンポーネントをデプロイし、管理できます。
+Ansible Automation Platform Operator を使用すると、Red Hat OpenShift Container Platform に Red Hat OpenShift Container Platform をデプロイし、管理できます。
 
 ## Dashboard を使用したクラスターへのログイン
 
@@ -42,7 +42,7 @@ Web コンソールにログインするには、画面上部付近の *Web* コ
 ```
 admin
 ```
-* パスワード：
+* パスワード
 ```
 admin
 ```
