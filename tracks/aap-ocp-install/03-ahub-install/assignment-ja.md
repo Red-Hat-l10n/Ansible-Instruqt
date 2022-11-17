@@ -4,7 +4,7 @@ id: dvtciaf9iguk
 type: challenge
 title: Operator を使用した Private Automation Hub のインストール
 タブ:
-- Web コンソール
+- title: Web コンソール
   type: website
   hostname: crc
   url: https://console-openshift-console.crc-gh9wd-master-0.crc.${_SANDBOX_ID}.instruqt.io
@@ -13,7 +13,7 @@ title: Operator を使用した Private Automation Hub のインストール
   type: terminal
   hostname: crc
 難易度: 基本
-timelimit: 600
+timelimit: 300
 ---
 以前のチャレンジでは、AAP から自動化コントローラーコンポーネントをインストールしました。インストールが完了したら、引き続き AAP Operator の詳細ウィンドウ内からプライベート Automation Hub コンポーネントをインストールします。
 
