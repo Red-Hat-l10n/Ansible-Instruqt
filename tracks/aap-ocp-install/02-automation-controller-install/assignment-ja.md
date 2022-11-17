@@ -4,7 +4,7 @@ id: rtiw0rhtalbx
 type: challenge
 title: Operator を使用した自動コントローラーのインストール
 タブ:
-- Web コンソール
+- title: Web コンソール
   type: website
   url: https://console-openshift-console.crc-gh9wd-master-0.crc.${_SANDBOX_ID}.instruqt.io
   new_window: true
@@ -12,7 +12,7 @@ title: Operator を使用した自動コントローラーのインストール
   type: terminal
   hostname: crc
 難易度: 基本
-timelimit: 600
+timelimit: 300
 ---
 以前のチャレンジでは、Ansible Automation Platform (AAP) Operator をインストールしました。インストールが完了すると、AAP Operator の詳細ウィンドウ内から Automation Controller コンポーネントをインストールし続けます。
 
