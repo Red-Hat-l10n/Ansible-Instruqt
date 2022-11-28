@@ -1,0 +1,38 @@
+slug: getting-started-ansible-navigator
+id: edt5xzxm8ld5
+type: track
+title: ansible-navigator の使用を開始する
+teaser: このラボでは、ansible-navigator をインストールし、コマンドラインを詳しく見ていきます
+description: |+
+  <img src="https://github.com/ansible/instruqt/blob/devel/assets/logos/Logo-Red_Hat-Ansible_Automation_Platform-A-Standard-RGB.png?raw=true" alt="図" style=";width:400px"/>
+  <br>
+  
+  # 自動化コンテンツナビゲーター (ansible-navigator)
+  * * *
+  <br>
+  
+  [`ansible-navigator`](https://github.com/ansible/ansible-navigator) は、自動化の作成者によりまとまりのある一貫したエクスペリエンスを提供する新しいコマンドラインツールです。
+  
+  
+  [`ansible-navigator`](https://github.com/ansible/ansible-navigator) は Ansible Automation Platform 2 に含まれており、既存の CLI の知識 (``ansible-playbook``) を活用しながら、コンテナー化された実行の機能強化も導入しています。
+  
+  
+  この一連の課題では、[`ansible-navigator`](https://github.com/ansible/ansible-navigator) をインストールし、簡単なユースケースを実行して、その機能と拡張機能を強調します。
+  
+  
+icon: "https://raw.githubusercontent.com/ansible/instruqt/devel/assets/icons/navigator/Product_icon-Red_Hat-Ansible-Automation_content_navigator-RGB.png"
+level: beginner
+tags:
+- aap
+- ansible
+- ' ansible-navigator'
+- aap2
+- creator
+- developer
+owner: redhat
+developers:
+- colin@redhat.com
+private: true
+published: true
+show_timer: true
+checksum: "3375650072284593077"
