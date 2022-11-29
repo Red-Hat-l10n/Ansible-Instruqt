@@ -13,35 +13,35 @@ title: Automation Hub ダッシュボードへのアクセス
   type: terminal
   hostname: crc
 難易度: 基本
-timelimit: 300
+制限時間: 300
 ---
-このチャレンジでは、新たにインストールした Automation Hub 環境にアクセスします。
+この課題では、新しくインストールされた Automation Hub 環境にアクセスします。
 
 ## Automation Hub へのアクセス
 
 Automation Hub ダッシュボードにアクセスするには、`admin` ユーザーのパスワードを取得します。
 
-`admin` ユーザーのパスワードにアクセスするには、`Workloads` ドロップダウンメニューで `Secrets` を選択します。
+`admin` ユーザーのパスワードにアクセスするには、`Workloads` ドロップダウンで `Secrets` を選択します。
 
-* `Secrets` 内で、`my-automation-hub-admin-password` というラベルが付けられたシークレットを選択します。
+* `Secrets` 内で、`my-automation-hub-admin-password` というラベルのシークレットを選択します。
 
-* `Secret details` ページ内でパスワードをクリップボードにコピーして、Automation Controller のサインインページに貼り付けます。
+* `Secret details` ページ内で、パスワードをクリップボードにコピーして、自動コントローラーのサインインページに貼り付けます。
 
-シークレット
+![Secrets](../assets/ahub-copy-password.png)
 
-* Automation Hub ダッシュボードの URL を取得するには、`Networking` ドロップダウン内の `Routes` を選択します。
+* Automation Hub ダッシュボードの URL を取得するには、`Networking` ドロップダウンで `Routes` を選択します。
 
-* `Routes` 内のプロジェクトの `ansible-automation-platform` で、`https://my-automation-hub-ansible-automation-platform...` で始まる場所が `my-automation-hub-web-svc` というラベルの付いたサービスについて指定されます。
+* `Routes` 内のプロジェクト `ansible-automation-platform` の下で、`https://my-automation-hub-ansible-automation-platform....` で始まる場所が、`my-automation-hub-web-svc` というラベルの付いたサービスに提供されます。
 
-![OCP ルート](../assets/ahub-route.png)
+![OCP Routes](../assets/ahub-route.png)
 
-> **_注記：_** URL の場所は、Automation Hub のサインインページに移動します。
+> **_注意:_** URL をクリックすると、Automation Hub のサインインページに移動します。
 
-* ユーザー `admin` と、クリップボードにコピーされたパスワードを使用して Automation Hub ダッシュボードにログインします。
+* ユーザー `admin` とクリップボードにコピーしたパスワードを使用して、Automation Hub ダッシュボードにログインします。
 
-![AHub ダッシュボード](../assets/ahub_dashboard.png)
+![AHub Dashboard](../assets/ahub_dashboard.png)
 
 お疲れさまでした。以下が正常に行われました。
 
-* Automation Hub がインストールされていること
-* Automation Hub ダッシュボードにアクセスします。
+* Automation Hub のインストール
+* Automation Hub ダッシュボードへのアクセス
