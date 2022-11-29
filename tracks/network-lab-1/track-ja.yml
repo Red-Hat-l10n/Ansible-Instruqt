@@ -1,0 +1,29 @@
+slug: network-lab-1
+id: cevsyxodjoe8
+type: track
+title: "Ansible Network Automation: ラボ 1: 設定のバックアップとリストア"
+teaser: Ansible Automation Platform を使用したネットワーク設定とバックアップの実行方法を紹介します
+description: |+
+  # 概要
+  
+  ネットワークのバックアップとリストアは、全体から見ればあまり面白いものではありません。すべてのネットワークオペレーターが必要とする、非常に一般的でユビキタスなユースケースであることは分かっています。これにより、ネットワークエンジニアが自動化の道を歩み始めるための、簡単なターンキーユースケースを提供します。
+  
+  <center><img src="https://github.com/IPvSean/pictures_for_github/blob/master/lab1-overview.png?raw=true"></center>
+  
+  # コードとしてのネットワークへの第一歩
+  
+  ネットワークオペレーターが、わずか数行の YAML のシンプルな Playbook を、ラップトップから何百台ものルーターやスイッチにわたって実行できることに気づけば、自動化に夢中になり、無限の可能性を見いだすことでしょう。
+  
+  
+icon: "https://github.com/network-automation/networking-icons/blob/master/switches/switch_red_small.png?raw=true"
+level: beginner
+tags:
+- ネットワークの自動化
+- ' cisco'
+owner: redhat
+developers:
+- seanc@redhat.com
+private: true
+published: true
+skipping_enabled: true
+checksum: "11910431153744473046"
