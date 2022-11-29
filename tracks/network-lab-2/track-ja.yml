@@ -1,0 +1,39 @@
+slug: network-lab-2
+id: rzwsflepd6vk
+type: track
+title: Ansible Network Automation - ラボ 2 - Infrastructure Awareness
+teaser: Ansible Automation Platform を使用した Dynamic Documentation の作成方法について説明します
+description: |+
+  # 概要
+  
+  Infrastructure Awareness とは、ネットワーク出刃押すから情報を取得し、ネットワークデバイスの設定や状態について正確な情報とインサイトを素早く得ることができる機能です。多くの組織では、実行中の設定が「信頼できる情報源」であるため、問題が発生すると、まず最初にさまざまな show コマンドを実行して、ボックス上の設定を確認することになる。 実際、ほとんどのネットワークベンダーがチケットを作成する際に、スクリプトやエイリアスを使用して、あらゆる show コマンドと出力を単純にダンプします。これは、ネットワーク図、IPAM (IP アドレス管理) ツール、あるいは問題チケットを作成したネットワーク管理者さえ信用していないためです。
+  
+  <center><img src="https://github.com/IPvSean/pictures_for_github/blob/master/infrastructure_awareness.png?raw=true"></center>
+  
+  # ダイナミックドキュメント
+  
+  Red Hat Ansible Automation Platform を使用すると、ネットワーク設定とネットワークデバイスの状態を構造化データにすばやく変換し、その構造化データを必要な出力に変換することができます。 たとえば、このラボでは出力を単純な HTML Web サイトに変換します。 この概念は、一般的に **ダイナミックドキュメント** と呼ばれ、多くの異なるユースケースで使用できます。
+  
+  # 重要な理由
+  
+  これは、Ansible を習得するにつれて徐々に価値を高めていくことができるため、ネットワーク事業者にとって優れた初期ユースケースと言えます。
+  
+  **インフラストラクチャーの認識**
+   - ネットワーク事業者によるネットワークの把握と監査が可能です。
+   - 読み取り専用で、プロダクションの設定を変更する必要はありません。
+   - 高度な設定が可能です。 構造化されたデータがあれば、ネットワークデバイスを Web サイトやマークダウンファイルに変換したり、ServiceNow などの ITSM にデータをアップロードすることもできます。
+  
+  
+  
+icon: "https://github.com/network-automation/networking-icons/blob/master/switches/switch_red_small.png?raw=true"
+level: beginner
+tags:
+- ネットワークの自動化
+- ' cisco'
+owner: redhat
+developers:
+- seanc@redhat.com
+private: true
+published: true
+skipping_enabled: true
+checksum: "11376281117266780690"
