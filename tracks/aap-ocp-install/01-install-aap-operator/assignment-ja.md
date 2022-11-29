@@ -6,13 +6,13 @@ title: AAP Operator のインストール
 注記:
 - type: text
   コンテンツ: |-
-    # welcome
+    # ようこそ
 
-    Red Hat OpenShift への Ansible Automation Platform (AAP)のインストール方法については、こちらをご参照ください。
+    Ansible Automation Platform (AAP) を OpenShift にインストールする方法を学ぶ準備をしましょう。
 
-    以下の課題では、OpenShift 環境で AAP を簡単に確認し、簡単に稼働させる方法を紹介します。
+    次の課題では、いかに簡単に数分で実行することが可能かを紹介し、OpenShift 環境で AAP を使用できるようにします。
 
-    これが利用可能になったら、残りの時間で新しい Ansible Automation Platform 2 を調べ、にある他のラボをすべてチェックアウトしてください。 https://www.ansible.com/products/ansible-training
+    使用可能になったら、残りの時間で新しい Ansible Automation Platform 2 を試してみてください。また、https://www.ansible.com/products/ansible-training にある他のラボもすべてチェックしてください。
 タブ:
 - title: ターミナル 1
   type: terminal
@@ -26,23 +26,23 @@ title: AAP Operator のインストール
   hostname: crc
   path: /root
 難易度: 基本
-timelimit: 300
+制限時間: 600
 ---
-このチャレンジでは、OpenShift クラスターダッシュボードにログインし、Ansible Automation Platform Operator をインストールします。
+この課題では、OpenShift クラスターダッシュボードにログインし、Ansible Automation Platform Operator をインストールします。
 
-Ansible Automation Platform Operator を使用すると、Red Hat OpenShift Container Platform に Red Hat OpenShift Container Platform をデプロイし、管理できます。
+Ansible Automation Platform Operator をインストールすると、Red Hat OpenShift 上に Ansible Automation Platform コンポーネントをデプロイおよび管理することができるようになります。
 
-## Dashboard を使用したクラスターへのログイン
+## ダッシュボード経由でクラスターにログインする
 
-Web コンソールにログインするには、画面上部付近の *Web* コンソール タブをクリックします。
+Web コンソールにログインするには、画面の上部にある *Web Console* タブをクリックします。
 
-以下の認証情報を使用して `admin` ユーザーとしてログインできます。
+次の認証情報を使用して、`admin` ユーザーとしてログインできます。
 
 * ユーザー名:
 ```
 admin
 ```
-* パスワード
+* パスワード:
 ```
 admin
 ```
@@ -50,25 +50,25 @@ admin
 
 ダッシュボードにログインしたら、`Operators -> OperatorHub` を選択します。
 
-OperatorHub 検索バー内で、`ansible` と入力して Ansible Automation Platform Operator を検索します。
+OperatorHub 検索バー内で `ansible` と入力して、Ansible Automation Platform Operator を検索してください。
 
 ![OperatorHub](../assets/OperatorHub_access.png)
 
-Ansible Automation Platform Operator を選択し、Install `を` 選択します。
+Ansible Automation Platform Operator を選択し、`Install` を選択します。
 ![AAP_Install](../assets/select_aap_operator_1.png)
 
-`Install Operator` ウィンドウで、`Update チャネル` 内の `stable-2.2-cluster-scoped` ラジオボタンが選択され、`Installation モード` が `All namespaces on the cluster (default)` に設定されていることを確認します。
+`Install Operator` ウィンドウ内で、`Update channel` 内の `stable-2.2-cluster-scoped` ラジオボタンが選択され、`Installation mode` が `All namespaces on the cluster (default)` 設定されていることを確認します。
 
-> **_注記：_** デフォルトでは、namespace `ansible-automation-platform` が存在しない場合は作成されますが、必要な場合は別の namespace を作成するか、使用することができます。最後に、`Update approval` に `Automatic` を選択し、`Install` をクリックします。
+> **_注記:_** デフォルトでは、名前空間 `ansible-automation-platform` が存在しない場合は作成されますが、必要に応じて別の名前空間を作成または使用できます。最後に、`Update approval` で `Automatic` を選択し、`Install` をクリックします。
 
 ![Install Operator](../assets/operator_install_1.png)
 
-> **_注記：_** Ansible Automation Platform Operator のインストールが完了するまでに数分かかります。
+> **_注記:_** Ansible Automation Platform Operator のインストールが完了するまでに数分かかります。
 
 `Installed operator - ready for use` が表示されたら、`View Operator` ボタンを選択します。
 
-お疲れさまでした。これにより、Ansible Automation Platform Operator のインストールが完了しました。
+お疲れさまでした。これで、Ansible Automation Platform Operator のインストールが完了しました。
 
-次の課題では、Operator からのコンポーネント（特に `Automation Controller` ）の 1 つをデプロイすることに重点を置いています。
+次の課題では、Operator からのコンポーネントの 1 つ、具体的には `Automation Controller` のデプロイに焦点を当てます。
 
-> **_警告：_** 次のチャレンジにアクセスする前に、Ansible Automation Platform Operator によってデプロイされた Pod が稼働している必要があります。そうしないと、チェックに失敗します。
+> **_警告:_** 次のチャレンジにアクセスする前に、Ansible Automation Platform Operator によってデプロイされた Pod が稼働している必要があります。稼働していない場合は、チェックに失敗します。
