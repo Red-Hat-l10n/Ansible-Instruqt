@@ -2,7 +2,7 @@
 slug: access-automation-controller
 id: nudioocrzqv2
 type: challenge
-title: 自動化コントローラーダッシュボードへのアクセス
+title: 自動コントローラーのダッシュボードへのアクセス
 タブ:
 - title: Web コンソール
   type: website
@@ -11,44 +11,44 @@ title: 自動化コントローラーダッシュボードへのアクセス
 - title: ターミナル 1
   type: terminal
   hostname: crc
-- ansible
+- title: Ansible
   type: terminal
   hostname: ansible
 難易度: 基本
-timelimit: 300
+制限時間: 600
 ---
-このチャレンジでは、新たにインストールした自動化コントローラー環境にアクセスします。
+この課題では、新しくインストールされた自動コントローラー環境にアクセスします。
 
-## automation controller
+## 自動コントローラーへのアクセス
 
-自動化コントローラーダッシュボードにアクセスするには、`admin` ユーザーのパスワードを取得します。
+自動コントローラーのダッシュボードにアクセスするには、`admin` ユーザーのパスワードを取得します。
 
-`admin` ユーザーのパスワードにアクセスするには、`Workloads` ドロップダウンメニューで `Secrets` を選択します。
+`admin` ユーザーのパスワードにアクセスするには、`Workloads` ドロップダウンで `Secrets` を選択します。
 
-* `Secrets` 内で、`my-automation-controller-admin-password` というラベルが付けられたシークレットを選択します。
+* `Secrets` 内で、`my-automation-controller-admin-password` というラベルのシークレットを選択します。
 
-* `Secret details` ページ内でパスワードをクリップボードにコピーして、Automation Controller のサインインページに貼り付けます。
+* `Secret details` ページ内で、パスワードをクリップボードにコピーして、自動コントローラーのサインインページに貼り付けます。
 
-シークレット
+![Secrets](../assets/copy-password.png)
 
-* 自動化コントローラーダッシュボードの URL を取得するには、`Networking` ドロップダウン内の `Routes` を選択します。
+* 自動コントローラーのダッシュボード URL を取得するには、`Networking` ドロップダウンで `Routes` を選択します。
 
-* `Routes` 内のプロジェクトの `ansible-automation-platform` で、`https://my-automation-controller-ansible-automation-platform...` で始まる場所が `my-automation-controller-service` というラベルの付いたサービスについて指定されます。
+* `Routes` 内のプロジェクト `ansible-automation-platform` の下で、`https://my-automation-controller-ansible-automation-platform....` で始まる場所が、`my-automation-controller-service` というラベルの付いたサービスに提供されます。
 
-![OCP ルート](../assets/my-automation-controller-route.png)
+![OCP Routes](../assets/my-automation-controller-route.png)
 
-> **_注記：_** URL の場所は、自動化コントローラーのサインインページに移動します。
+> **_注記:_** URL をクリックすると、自動コントローラーのサインインページに移動します。
 
-自動化コントローラーのサインインページが読み込まれていない場合は、インストールプロセスが進行中であることを意味します。Ansible Automation Platform が完了していないことを示す画面の例を以下に示します。
+自動コントローラーのサインインページがロードされていない場合は、インストールプロセスがまだ進行中であることを意味します。Ansible Automation Platform が完了していないことを示す画面の例を以下に示します。
 
-![AAP 進行中](../assets/aap_in_progress.png)
+![AAP In Progress](../assets/aap_in_progress.png)
 
-* ユーザー `admin` と、クリップボードにコピーされたパスワードを使用して自動化コントローラーダッシュボードにログインします。
+* ユーザー `admin` とクリップボードにコピーしたパスワードを使用して、自動コントローラーダッシュボードにログインします。
 
-![AAP ダッシュボード](../assets/aap_dashboard.png)
+![AAP Dashboard](../assets/aap_dashboard.png)
 
 お疲れさまでした。以下が正常に行われました。
 
-* Operator 経由でインストールした Ansible Automation Platform
-* インストールされた自動化コントローラー
-* Automation controller ダッシュボードへようこそ。
+* Operator 経由での Ansible Automation Platform のインストール
+* 自動コントローラーのインストール
+* 自動コントローラーのダッシュボードへのアクセス
