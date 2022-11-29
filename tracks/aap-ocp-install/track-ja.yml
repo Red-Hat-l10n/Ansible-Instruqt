@@ -5,14 +5,14 @@ title: Operator を使用した OpenShift への Ansible Automation Platform の
 description: |
   ## 目的
   
-  Operator を使用した OpenShift への Ansible Automation Platform のインストール
+  Operator を使用した OpenShift への Ansible Automation Platform (AAP) のインストール
   
-  ## 詳細情報
+  ## 以下について学びます。
   
-  * AAP Operator のインストール
-  * 自動化コントローラーのインストール
+  * AAP オペレーターのインストール
+  * 自動コントローラーのインストール
   * Automation Hub のインストール
-  * 新規インストールした AAP 環境にアクセスします。
+  * 新しくインストールされた AAP 環境へのアクセス
 icon: ""
 level: beginner
 tags:
