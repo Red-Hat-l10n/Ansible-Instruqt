@@ -1,0 +1,50 @@
+slug: template-slug-url-of-track
+id: 5wxpskcoizob
+type: track
+title: '[テンプレート] track のタイトル'
+teaser: この track の内容に関する簡単な説明 (track カードに表示されます）
+description: |-
+  track の詳細説明。ここでは Markdown を使用できます。
+  
+  ![Ansible デモロゴ] (https://raw.githubusercontent.com/ansible/instruqt/devel/assets/ansible-demo.png)
+icon: ""
+level: beginner
+tags:
+- gettingstarted
+owner: redhat
+developers:
+- colin@redhat.com
+private: true
+published: false
+maintenance: true
+challenges:
+- slug: the-part-of-the-url-that-identifies-your-challenge
+  id: kkryonz4ardk
+  type: challenge
+  title: これは、課題のタイトルです。
+  teaser: 課題の簡単な説明 (最大 1-2 文)。
+  notes:
+  - type: text
+    contents: ここでは、環境の起動時にユーザーに対して情報を提供できます。Notes には、テキスト、イメージ、およびビデオを含めることができます。右側の矢印をチェックしてみてください。
+  - type: text
+    contents: 必要な数だけメモを作成できます。ここではマークダウンを使用できます。
+  assignment: 課題の全割り当て。ここではマークダウンを使用できます。
+  tabs:
+  - title: tower
+    type: service
+    hostname: tower
+    port: 443
+  - title: editor
+    type: service
+    hostname: tower
+    path: /editor/
+    port: 443
+  - title: ansible-cli
+    type: terminal
+    hostname: tower
+  - title: rhel-cli
+    type: terminal
+    hostname: rhel
+  difficulty: basic
+  timelimit: 5000
+checksum: "2572891714190287433"
