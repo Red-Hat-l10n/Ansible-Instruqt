@@ -1,0 +1,20 @@
+slug: test-getting-started-servicenow-automation
+id: toryi20tndal
+type: track
+title: '開発: ServiceNow 自動化の使用'
+teaser: Ansible Automation Platform の ServiceNow コレクションが提供する基本機能の確認
+description: Ansible Automation Platform では、一部の人気の高い IT サービスを統合できます。サポートされている ServiceNow との統合を活用して、インシデントと CMDB の管理を通じてクローズドループの自動化を実装し、組織が信頼するソースの信頼性を維持する方法を学びましょう。
+icon: ""
+level: beginner
+tags:
+  - itsm
+  - ' servicenow'
+  - ' cmdb'
+owner: redhat
+developers:
+  - colin@redhat.com
+private: true
+published: false
+maintenance: true
+show_timer: true
+checksum: "1089882177660750898"
