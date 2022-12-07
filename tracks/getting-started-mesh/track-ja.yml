@@ -1,0 +1,40 @@
+slug: getting-started-mesh
+id: akkabmifu15z
+type: track
+title: Automation Hub の使用開始
+teaser: このトラックでは、Automation Mesh 機能について学び、基本的な設定タスクを実行して使用し、ACME Corp でジョブテンプレートを実行します。
+description: |-
+  # Red Hat Ansible Automation Mesh
+  ***
+  
+  <br>
+  
+  ![mesh_map](./assets/img/mesh_map.png)
+  
+  <br>
+  
+  Ansible Automation Platform の [Automation Mesh](https://www.ansible.com/blog/whats-new-in-ansible-automation-platform-2.1-automation-mesh) コンポーネントは、双方向かつ複数のホップが含まれるノードのオーバーレイネットワークで、DMZ や VPC などの制限付きネットワーク全体で、世界中にあるローカルおよびリモートのエンドポイントに対して自動化を提供します。
+  
+  このラボでは、メッシュを設定し、リモートロケーションで自動化を実行して、ネイティブメッシュ機能でネットワーク障害を解決します。
+  
+  このラボでは、次の内容について説明します。
+  
+  * Automation Mesh ノードのタイプおよび機能
+  * Automation Controller を使用した Automation Mesh ノードの論理的な分類方法
+  * マルチサイト環境での Automation Mesh の使用
+  * Automation Mesh の回復性と、Ansible Automation プラットフォーム設計への冗長性の構築
+icon: "https://raw.githubusercontent.com/craig-br/instruqt-tracks/devel/assets/icons/automation_mesh.png"
+level: beginner
+tags:
+- ansible
+- Ansible Automation Platform
+- メッシュ
+- Automation Mesh 
+owner: redhat
+developers:
+- cbrandt@redhat.com
+private: true
+published: true
+show_timer: true
+skipping_enabled: true
+checksum: "5009210370509543477"
