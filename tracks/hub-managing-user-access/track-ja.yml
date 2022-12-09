@@ -1,0 +1,40 @@
+slug: hub-managing-user-access
+id: leuuxvbbcgp5
+type: track
+title: Private Automation Hub を使用したユーザーアクセスおよびコンテンツアップロードポリシーの管理
+teaser: Automation Hub ユーザーのグループを作成して適切なシステムパーミッションを割り当てるか、認証前のユーザーに表示アクセスのみを許可する
+description: |-
+  
+  # プライベート自動化ハブを使用したユーザーアクセスおよびコンテンツアップロードポリシーの管理
+  ***
+  
+  このラボでは、主に 2 つのペルソナに焦点を当てて説明します。
+  - 自動化キュレーター - 組織のプライベート自動化ハブのコンテンツを管理します。キュレーターは、すべての自動化コンテンツのマネージャー/監督者です。
+  - Automation Developer - 組織内の特定のグループ (ネットワーク、クラウド、またはストレージの自動化開発者など) に関連付けられている自動化開発者。グループの Ansible Automation を書き込みます。
+  
+  このラボで、キュレーターはクラウドおよびネットワーク自動化開発者に、コンテンツコレクションと自動化実行環境を Private Automation Hub インスタンスにプッシュするためのパーミッションを付与したいと考えています。
+  
+  このラボは、実際のシナリオを反映しており、キュレーターは、コンテンツ承認後に特定のグループからのコンテンツのみ公開する必要がある組織の自動化管理者とみなすことができます。
+  
+  このラボでは、次の内容について説明します。
+  
+  * 承認のためにテストおよび検証できるよう、受信コンテンツコレクションのポリシーを設定するキュレーター。
+  * クラウド名前空間にコレクションを公開するためのアクセス権を持つ Cloud Automation グループの作成。
+  * コレクションをネットワーク名前空間に公開するためのアクセス権を持つ Network Automation グループの作成。
+  * コレクションをクラウド名前空間に公開するクラウド自動化開発者は。
+  * コレクションをネットワーク名前空間に公開するネットワーク自動化開発者。
+  * インポートログに基づき、クラウドグループおよびネットワークグループからのコレクションを承認するキュレーター。
+icon: ./assets/Product_icon-Red_Hat-Ansible-Automation_hub_private-RGB.png
+level: beginner
+tags:
+- ansible
+- ' private-automation-hub'
+- ' ansible-galaxy'
+owner: redhat
+developers:
+- abehl@redhat.com
+private: true
+published: true
+maintenance: true
+skipping_enabled: true
+checksum: "12845553861267606975"
