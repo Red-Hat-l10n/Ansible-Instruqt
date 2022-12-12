@@ -141,7 +141,7 @@ node1                      : ok=2    changed=0    unreachable=0    failed=0    s
 🐛 問題が発生していますか ?
 ====
 
-問題が発生した場合や、正しくない点に気付いた場合は、[チケットを作成](https://github.com/ansible/instruqt/issues/new?labels=writing-first-playbook&title=Issue+with+Writing+First+Playbook+slug+ID:+playbook-run-it&assignees=rlopez133)してください。
+問題が発生した場合や、正しくない点に気付いた場合は、[open an issue](https://github.com/ansible/instruqt/issues/new?labels=writing-first-playbook&title=Issue+with+Writing+First+Playbook+slug+ID:+playbook-run-it&assignees=rlopez133)をクリックしてください。
 
 <style type="text/css" rel="stylesheet">
   .lightbox {
