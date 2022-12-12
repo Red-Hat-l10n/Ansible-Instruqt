@@ -95,7 +95,7 @@ Ansible の強みの 1 つは、Playbook の流れを読みやすく理解しや
 🐛 問題が発生していますか ?
 ====
 
-問題が発生した場合や、不審な点に気付いた場合は、[チケットを作成](https://github.com/ansible/instruqt/issues/new?labels=writing-first-playbook&title=Issue+with+Writing+First+Playbook+slug+ID:+playbook-directory-structure&assignees=rlopez133) してください。
+問題が発生した場合や、不審な点に気付いた場合は、[open an issue](https://github.com/ansible/instruqt/issues/new?labels=writing-first-playbook&title=Issue+with+Writing+First+Playbook+slug+ID:+playbook-directory-structure&assignees=rlopez133)をクリックしてください。
 
 <style type="text/css" rel="stylesheet">
   .lightbox {
