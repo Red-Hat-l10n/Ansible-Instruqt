@@ -92,7 +92,7 @@ cd ansible-files
 ansible-navigator inventory --list
 ```
 
-`--list` が細かすぎる場合は、`--graph` のオプションを使用して、`--list` をようやくしたものを出力できます。
+`--list` が細かすぎる場合は、`--graph` のオプションを使用して、`--list` を要約したものを出力できます。
 
 ```
 ansible-navigator inventory --graph
@@ -108,7 +108,7 @@ ansible-navigator inventory --graph
 🐛 問題が発生していますか ?
 ====
 
-問題が発生した場合や、正しくない点に気付いた場合は、[チケットを作成] してください (https://github.com/ansible/instruqt/issues/new?labels=writing-first-playbook&title=Issue+with+Writing+First+Playbook+slug+ID:+playbook-inventory&assignees=rlopez133)。
+問題が発生した場合や、正しくない点に気付いた場合は、[チケットを作成]してください(https://github.com/ansible/instruqt/issues/new?labels=writing-first-playbook&title=Issue+with+Writing+First+Playbook+slug+ID:+playbook-inventory&assignees=rlopez133)。
 
 <style type="text/css" rel="stylesheet">
   .lightbox {
