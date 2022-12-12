@@ -2,7 +2,7 @@
 slug: controller-approval
 id: xwdgcvhu6tgk
 type: challenge
-title: コントローラーにおけるアプリケーションのデプロイの承認
+title: コントローラーでのアプリケーションデプロイメントの承認
 teaser: 最後に、新しいリリースをビルドするためのコントローラーのワークフローを承認し、Web サーバーを
   設定して、Let's Quiz! アプリケーションをデプロイします。
 注記:
@@ -28,7 +28,7 @@ teaser: 最後に、新しいリリースをビルドするためのコントロ
     }
     </style>
 タブ:
-- title: コントローラー
+- title: Controller
   type: service
   hostname: controller
   port: 443
@@ -66,7 +66,7 @@ teaser: 最後に、新しいリリースをビルドするためのコントロ
 >### **❗️ 注記**
 > このチャレンジのチェックは、Jenkins パイプラインの完了時間に変動が生じる可能性があるため、数秒長くかかる場合があります。
 
-☑️ タスク 1 - コントローラーで DevOps ワークフローを詳細に調べる
+☑️ タスク 1 - コントローラーで DevOps ワークフローを詳細に見る
 ===
 
 ACME Corp のオペレーションは、`DevOps Workflow` と呼ばれる [コントローラーワークフロー](https://docs.ansible.com/automation-controller/4.2.0/html/userguide/workflows.html) を作成しました。このワークフローは、Web サーバーの設定、ACMECorp リポジトリーでのアプリケーションリリースの作成、そしてアプリケーションの実稼働環境へのデプロイを 1 つのプロセスにまとめたものです。
@@ -109,7 +109,7 @@ ACME Corp のオペレーションは、`DevOps Workflow` と呼ばれる [コ�
   <img alt="Controller" src="../assets/img/controller_devops_visualizer_workflow.png" />
 </a>
 
-**`DevOps Workflow` ジョブテンプレートノードを詳細に知る**
+**`DevOps Workflow` ジョブテンプレートノードを詳細に見る**
 
 * **Deploy to Prod?** \- このコントローラーの [承認ノード](https://docs.ansible.com/automation-controller/latest/html/userguide/workflow_templates.html#approval-nodes) により、意思決定者は、アプリケーションの実稼働環境へのデプロイを承認することができます。
 * **Create App Release** \- 通常、開発者が実行するこの手順では、_ACMECorp_ パイプラインで生成された `tag_name` 変数を使用して、新しい _Let's Quiz!_ リリースを _Gitea_ に作成します。
@@ -120,11 +120,11 @@ ACME Corp のオペレーションは、`DevOps Workflow` と呼ばれる [コ�
 ☑️ タスク 2 - コントローラーでの DevOps Workflow の承認
 ===
 
-ACME Corp のオペレーションは、`Deploy to Prod` と呼ばれるコントローラー [承認ノード](https://docs.ansible.com/automation-controller/latest/html/userguide/workflow_templates.html#approval-nodes) を `DevOps Workflow` ジョブテンプレートに追加しました。この手順により、ACME Corp の意思決定者は、_Let’s Quiz!_ の対象サーバーで十分な容量が利用可能であることを確認するなど、最終チェックを実行することができます。
+ACME Corp のオペレーションでは、`Deploy to Prod` と呼ばれるコントローラー [承認ノード](https://docs.ansible.com/automation-controller/latest/html/userguide/workflow_templates.html#approval-nodes) を `DevOps Workflow` ジョブテンプレートに追加しました。この手順により、ACME Corp の意思決定者は、_Let’s Quiz!_ の対象サーバーで十分な容量が利用可能であることを確認するなど、最終チェックを実行することができます。
 
 現在、新しい _Let’s Quiz!_ アプリケーションはデプロイされていません。
 
-**_Let's Quiz!_ アプリケーションの実稼働デプロイメントを承認する**
+**_Let's Quiz!_ アプリケーションの実稼働デプロイメントを承認します。**
 
 * *Controller* タブが開いていない場合は、ブラウザーウィンドウの上部にある *Controller* タブをクリックします。
 * 必要な場合は、提供された認証情報を使用してログインしてください。
@@ -249,7 +249,7 @@ _Workflow Approval_ インターフェイスは、承認されたユーザーが
 
 * 新しいリリースでは、ACME Corp のパイプラインで生成された `tag_name` 変数の値が使用されていることに留意してください。
 
-ACME Corp.のオペレーションは、関連する `TAR.GZ` ファイルを使用して、_Let's Quiz!_ アプリケーションを実稼働環境にデプロイしました。
+ACME Corp のオペレーションは、関連する `TAR.GZ` ファイルを使用して、_Let's Quiz!_ アプリケーションを実稼働環境にデプロイしました。
 
 ☑️ タスク 5 - ACMECorp パイプラインの確認
 ===
@@ -297,7 +297,7 @@ ACME Corp.のオペレーションは、関連する `TAR.GZ` ファイルを使
 
 以下のような、**[Ansible Automation Platform](https://www.redhat.com/en/technologies/management/ansible#:~:text=Ansible%20Automation%20Platform%20provides%20an,to%20security%20and%20network%20teams) が提供するエンタープライズ機能をいくつか説明しました。**
 * [ワークフロージョブテンプレート](https://docs.ansible.com/automation-controller/latest/html/userguide/workflow_templates.html) を使用すると、より複雑なユースケースを解決するために、自動化の小さな部分を論理的に連結して再利用することができます。
-* 自動コントローラーは、現在の DevOps プラクティスを増強、統合、向上させ、複数の IT ドメインと環境にまたがる広範な[API](https://docs.ansible.com/automation-controller/latest/html/controllerapi/index.html) を提供します。
+* 自動コントローラーは、現在の DevOps プラクティスを増強、統合、向上させ、複数の IT ドメインと環境にまたがる広範な [API](https://docs.ansible.com/automation-controller/latest/html/controllerapi/index.html) を提供します。
 
 **さらに、Ansible Automation Platform は、現在の DevOps プラクティスを強化するための複数の機能を提供します。**
 * [Ansible Content Collections](https://www.ansible.com/products/content-collections) は、ビルド済み、テスト済み、認定済みの自動化コンテンツを提供して、自動化への参入障壁を下げ、ツール統合に関連する運用上のオーバーヘッドを削減します。
@@ -309,9 +309,9 @@ ACME Corp.のオペレーションは、関連する `TAR.GZ` ファイルを使
 
 自動化への取り組みを始めたばかりの方でも、経験豊富なベテランの方でも、自動化の知識を深めるためのさまざまなリソースを利用できます。
 
-* [自分のペースで進められる演習](https://www.redhat.com/en/engage/redhat-ansible-automation-202108061218) - 自分のペースで進められるラボをすべてご覧ください
+* [自分のペースで進められる演習](https://www.redhat.com/en/engage/redhat-ansible-automation-202108061218) - 自分のペースで進められるすべてのラボをご覧ください。
 * [トライアルサブスクリプション](http://red.ht/try_ansible) - お使いの環境にインストールする準備はできていますか?Ansible Automation Platform のすべてのコンポーネントに無制限にアクセスするには、トライアルサブスクリプションを取得してください。
-* [Red Hat Ansible Automation Platform の YouTube チャンネルにサブスクライブします。](https://www.youtube.com/ansibleautomation)
+* [Red Hat Ansible Automation Platform の YouTube チャンネルへのサブスクライブ。](https://www.youtube.com/ansibleautomation)
 
 ✅ 次のチャレンジ - プレイグラウンド
 ===
