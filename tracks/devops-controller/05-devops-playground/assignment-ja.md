@@ -28,7 +28,7 @@ teaser: 残りの時間を使って、ご自身で試してみてください。
     }
     </style>
 タブ:
-- title: コントローラー
+- title: Controller
   type: service
   hostname: controller
   port: 443
@@ -73,11 +73,11 @@ teaser: 残りの時間を使って、ご自身で試してみてください。
 
 自動化への取り組みを始めたばかりの方でも、経験豊富なベテランの方でも、自動化の知識を深めるためのさまざまなリソースを利用できます。
 
-* [自分のペースで進められる演習](https://www.redhat.com/en/engage/redhat-ansible-automation-202108061218) - すべてが自分のペースで進められるラボをご覧ください
+* [自分のペースで進められる演習](https://www.redhat.com/en/engage/redhat-ansible-automation-202108061218) - 自分のペースですべてを進められるラボをご覧ください。
 * [トライアルサブスクリプション](http://red.ht/try_ansible) - お使いの環境にインストールする準備はできていますか?Ansible Automation Platform のすべてのコンポーネントに無制限にアクセスするには、トライアルサブスクリプションを取得してください。
-* [Red Hat Ansible Automation Platform の YouTube チャンネルにサブスクライブします。](https://www.youtube.com/ansibleautomation)
+* [Red Hat Ansible Automation Platform の YouTube チャンネルへのサブスクライブ。](https://www.youtube.com/ansibleautomation)
 
-NORMAL で問題が発生していますか ?
+🐛 問題が発生しましたか?
 ====
 ワークフロー全体を再起動する必要がある場合は、自動コントローラーで `Restart DevOps Workflow` ジョブテンプレートを実行します。
 
