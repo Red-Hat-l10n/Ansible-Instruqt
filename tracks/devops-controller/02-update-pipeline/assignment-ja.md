@@ -33,7 +33,7 @@ teaser: 自動コントローラーを使用して ACME Corp のパイプライ�
   hostname: jenkins
   path: /job/ACMECorp/
   port: 8080
-- title: コントローラー
+- title: Controller
   type: service
   hostname: controller
   port: 443
@@ -53,11 +53,11 @@ teaser: 自動コントローラーを使用して ACME Corp のパイプライ�
 
 ACME Corp では、デプロイメント用にオペレーションにコードを手動で渡す前に、_Jenkins_ を使用して基本的な開発タスクとチェックを実行しています。
 
-このラボでは、[ジョブテンプレート](https://docs.ansible.com/automation-controller/latest/html/userguide/job_templates.html) を使用して、Jenkins を _automation controller_ に統合するためのパイプラインを編集します。
+このラボでは、[ジョブテンプレート](https://docs.ansible.com/automation-controller/latest/html/userguide/job_templates.html) を使用して、Jenkins を _自動コントローラー_ に統合するためのパイプラインを編集します。
 
 
 >### **❗️ 注記**
->心配することはありません。このラボでは、Jenkins パイプラインのコーディングは行いませんので、詳細をすべて理解する必要はありません。
+>心配しなくても大丈夫です。このラボでは、Jenkins パイプラインのコーディングは行いませんので、詳細をすべて理解する必要はありません。
 
 ☑️ タスク 1 - ACME Corp パイプライン
 ===
@@ -88,7 +88,7 @@ ACMECorp パイプラインの手順を見てみましょう。
   <img alt="ACMECorp Pipeline" src="../assets/img/jenkins_acmecorp_configure.png" />
 </a>
 
-* _groovy_ コードを含む *Pipeline* セクションに到達するまで、ページの下部までスクロールします。
+* _groovy_ コードを含む *Pipeline* セクションに達するまで、ページの下部方向へスクロールします。
 
 <!-- ![ACMECorp Job](../assets/img/jenkins_acme_initial_pipe.png) -->
 <a href="#jenkins_acme_initial_pipe">
@@ -179,7 +179,7 @@ towerServer: 'ACME Corp controller',
 ```groovy
 templateType: 'workflow',
 ```
-Workflow Job Template の名前 - `DevOps Workflow`
+Workflow ジョブテンプレートの名前 - `DevOps Workflow`
 ```groovy
 jobTemplate: 'DevOps Workflow',
 ```
@@ -195,7 +195,7 @@ ACME Corp は、前の Jenkins の手順で作成された `$newPkgVersion` 変�
 
 ✅ 次のチャレンジ
 ===
-以下の `Check` ボタンを押して、タスクが完了したら次のチャレンジに移動します。
+タスクが完了したら、以下の `Check` ボタンを押して次のチャレンジに移動します。
 
 🐛 問題が発生しましたか?
 ====
