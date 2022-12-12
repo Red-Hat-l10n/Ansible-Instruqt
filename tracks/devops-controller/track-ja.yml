@@ -1,0 +1,40 @@
+slug: devops-controller
+id: u5sh0k588dhx
+type: track
+title: 自動コントローラーを使用した DevOps と CI/CD
+teaser: このラボでは、単純な CI/CD パイプラインを自動コントローラーに統合して、Ansible Automation Platform が企業全体で DevOps プラクティスをサポートおよび向上させる方法を示します。
+description: |-
+  # 自動コントローラーを使用した DevOps と CI/CD
+  ***
+  
+  [自動コントローラー](https://www.ansible.com/products/controller) は、既存のテクノロジーと統合し、企業全体の DevOps プラクティスを向上させるための広範な API、Webhook、およびワークフローを提供します。
+  
+  
+  
+  ![Controller DevOps](./assets/img/env_overview.png)
+  
+  
+  
+  このラボのサンプル企業である ACME Corp は、*Let's Quiz!* アプリケーションをデプロイする必要があります。現在、同社の Jenkins パイプラインは、静的コードチェックなどの基本的な開発タスクしか実行しておらず、実稼働環境へのデプロイは依然として手動で運用に引き継がれています。
+  
+  このラボでは、次の内容について説明します。
+  
+  * 自動コントローラーを使用した Jenkins の設定
+  * Jenkins の自動コントローラーへの統合
+  * 新しいアプリケーションリリースの作成、Web サーバーの設定、および更新された \*Let's Quiz [コントローラーワークフロー](https://docs.ansible.com/automation-controller/latest/html/userguide/workflows.html) のデプロイ
+  * 実稼働環境にデプロイする前に最終チェックとサインオフするためのコントローラー [承認](https://docs.ansible.com/automation-controller/4.2.0/html/userguide/workflow_templates.html#approval-nodes) の使用
+icon: ./assets/img/automation_controller.png
+level: intermediate
+tags:
+- controller
+- automation controller
+- devops
+- jenkins
+owner: redhat
+developers:
+- cbrandt@redhat.com
+private: true
+published: false
+show_timer: true
+skipping_enabled: true
+checksum: "3306545445418694596"
