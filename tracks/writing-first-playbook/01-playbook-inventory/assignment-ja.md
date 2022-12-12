@@ -59,7 +59,7 @@ Ansible navigator は、Ansible コンテンツを作成、レビュー、およ
 ===
 * *editor* タブがデフォルトで開きます。
 
-インベントリーファイルは、制御マシンによって管理されるノードを指定するテキストファイルです。管理対象のノードには、それらのノードのホスト名または IP アドレスのリストが含まれる場合があります。インベントリーファイルでは、ホストグループ名を角括弧 (\[]) で宣言することにより、ノードをグループに編成できます([])。
+インベントリーファイルは、制御マシンによって管理されるノードを指定するテキストファイルです。管理対象のノードには、それらのノードのホスト名または IP アドレスのリストが含まれる場合があります。インベントリーファイルでは、ホストグループ名を角括弧 ([]) で宣言することにより、ノードをグループに編成できます。
 
 左ペインに `ansible-files` というラベルの付いたフォルダーが 1 つ表示されます。このフォルダーには、インベントリーファイルと将来の Playbook が含まれます。
 
@@ -108,7 +108,7 @@ ansible-navigator inventory --graph
 🐛 問題が発生していますか ?
 ====
 
-問題が発生した場合や、正しくない点に気付いた場合は、[チケットを作成](https://github.com/ansible/instruqt/issues/new?labels=writing-first-playbook&title=Issue+with+Writing+First+Playbook+slug+ID:+playbook-inventory&assignees=rlopez133) してください。
+問題が発生した場合や、正しくない点に気付いた場合は、[open an issue](https://github.com/ansible/instruqt/issues/new?labels=writing-first-playbook&title=Issue+with+Writing+First+Playbook+slug+ID:+playbook-inventory&assignees=rlopez133)をクリックしてください。
 
 <style type="text/css" rel="stylesheet">
   .lightbox {
