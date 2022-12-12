@@ -4,7 +4,7 @@ id: 4zm4rievgnix
 type: challenge
 title: テスト環境の概要
 teaser: このチャレンジでは、ACME Corp が
-   *Let's Quiz!* アプリケーションをデプロイするために使用するさまざまな DevOps ツールを探ります。
+   *Let's Quiz!* アプリケーションをデプロイするために使用するさまざまな DevOps ツールを詳しく見ていきます。
 注記:
 - type: text
   コンテンツ: |-
@@ -44,7 +44,7 @@ teaser: このチャレンジでは、ACME Corp が
   hostname: jenkins
   path: /job/ACMECorp/
   port: 8080
-- title: コントローラー
+- title: Controller
   type: service
   hostname: controller
   port: 443
@@ -88,7 +88,7 @@ ACME Corp の開発者は `VS Code` IDE を使用しています。詳細を見�
   <img alt="VSCode folders" src="../assets/img/vscode_folders.png" />
 </a>
 
->### **❗️注意**
+>### **❗️注記**
 >*ACME Corp* リポジトリーと *git* 設定はすでにセットアップされています。
 
 ☑️ タスク 2 - Gitea
@@ -206,14 +206,14 @@ ACME Corp のオペレーションでは、自動コントローラーを環境�
   <img alt="DevOps Workflow visual" src="../assets/img/controller_devops_visualizer_workflow.png" />
 </a>
 
->### **❗️注意**<p>
+>### **❗️注記**<p>
 > 自動コントローラーは、DevOps ツールやワークフローをオーケストレーションするために、豊富な API、Workflow、Webhook などの機能を提供しています。<p>
 
 ✅ 次のチャレンジ
 ===
 以下の `Next` ボタンを押して、タスクが完了したら次のチャレンジに移動します。
 
-NORMAL で問題が発生していますか ?
+🐛 問題が発生しましたか?
 ====
 問題が発生した場合や気になる点がある場合は、[チケットを作成](https://github.com/ansible/instruqt/issues/new?labels=devops-controller&title=New+DevOps+with+automation+controller+issue+issue:+incident-creation&assignees=craig-br) してください。
 
