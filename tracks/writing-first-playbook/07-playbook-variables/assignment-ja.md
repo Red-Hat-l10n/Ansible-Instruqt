@@ -154,7 +154,7 @@ curl http://node2
 🐛 問題が発生していますか ?
 ====
 
-問題が発生した場合や、正しくない点に気付いた場合は、[チケットを作成] してください (https://github.com/ansible/instruqt/issues/new?labels=writing-first-playbook&title=Issue+with+Writing+First+Playbook+slug+ID:+playbook-variables&assignees=rlopez133)。
+問題が発生した場合や、正しくない点に気付いた場合は、[チケットを作成](https://github.com/ansible/instruqt/issues/new?labels=writing-first-playbook&title=Issue+with+Writing+First+Playbook+slug+ID:+playbook-variables&assignees=rlopez133)してください。
 
 <style type="text/css" rel="stylesheet">
   .lightbox {
