@@ -63,7 +63,7 @@ teaser: DevOps のワークフロー
 
 #### 推定所要時間: _10 分_<p>
 
-ACME Corp は、_Let's Quiz!_ アプリケーションのホームページを更新する必要があります。このチャレンジでは、VS Code でアプリケーションを更新し、最初の _環境概要_ チャレンジで説明した Gitea webhook をトリガーします。
+ACME Corp は、_Let's Quiz!_ アプリケーションのホームページを更新する必要があります。このチャレンジでは、VS Code でアプリケーションを更新し、最初の _環境の概要_ チャレンジで説明した Gitea webhook をトリガーします。
 
 >### **❗️ 注記**
 > このチャレンジのチェックは、Jenkins パイプラインの完了時間に変動が生じる可能性があるため、数秒長くかかる場合があります。
@@ -90,7 +90,7 @@ ACME Corp は、_Let's Quiz!_ アプリケーションのホームページを�
 ACME Corp のホームページを更新しましょう。
 
 * ブラウザーウィンドウの上部にある _VS Code_ タブを開きます。
-* VS Code Explorer ペインで、`app ⇒ lets_quiz ⇒ templates ⇒ quiz` に移動し、`home.html` をクリックします。
+* VS Code Explorer ペインで、`app ⇒ lets_quiz ⇒ templates ⇒ quiz` へと移動し、`home.html` をクリックします。
 
 <!-- ![VSCode home.html](../assets/img/vscode_home_edit.png) -->
 <a href="#vscode_home_edit">
@@ -121,7 +121,7 @@ ACME Corp のホームページを更新しましょう。
 </a>
 
 >### **❗️ 注記**
-> `home.html` の更新された行には、`<!-- FIX ME -->` コメントと同じインデントが必要です。異なる場合は、チャレンジチェックは失敗します。
+> `home.html` の更新された行には、`<!-- FIX ME -->` コメントと同じインデントが必要です。インデントが異なる場合は、チャレンジチェックは失敗します。
 
 * VS Code メニューバーの `File ⇒ Save` をクリックするか、関連するキーボードショートカットをクリックして、ファイルを保存します。
 
@@ -131,10 +131,10 @@ ACME Corp のホームページを更新しましょう。
 
 **更新された `home.html` ファイルを _Gitea_ リポジトリーにコミットしてプッシュします。**
 
-> ### **❗️ コードのコミットについてさらにガイダンスが必要ですか?**<p>
+> ### **❗️ コードのコミットに関する詳細なガイダンスが必要ですか?**<p>
 > 詳細な手順については、[Visual Studio Code Version Control ドキュメント](https://code.visualstudio.com/docs/editor/versioncontrol#_commit) を参照してください。
 
-* 左側の VS Code Explorer ペインで、ナンバーバナーが付いた `Source Control` Git アイコンをクリックします。以下の画像では、ナンバーバナーは `1` になります。
+* 左側の VS Code Explorer ペインで、数字バナーが付いた `Source Control` Git アイコンをクリックします。以下の画像では、数字バナーは `1` となっています。
 * `home.html` ファイルの右側にある + 記号をクリックします。
 * `Message` テキスト入力にコミットメッセージを入力します。たとえば、コミットメッセージは以下のようになります。
 
@@ -184,7 +184,7 @@ Updated home.html
 
 * ブラウザーウィンドウの上部にある _Jenkins_ タブをクリックします。
 * _Pipeline ACMECorp_ ウィンドウに、_Gitea_ webhook がパイプラインを開始したことが表示されます。
-* *number* アイコンをクリックして、Jenkins ビルドを開きます。以下のスクリーンショットでは、ビルド番号は `1` です。
+* *数字* アイコンをクリックして、Jenkins ビルドを開きます。以下のスクリーンショットでは、ビルド番号は `1` です。
 
 <!-- ![Jenkins running](../assets/img/jenkins_acme_job_running.png) -->
 <a href="#jenkins_acme_job_running">
@@ -220,7 +220,7 @@ Updated home.html
 `tag_name` 変数には、最新の _Let’s Quiz!_ アプリケーションバージョンが含まれています。上のイメージでは、`tag_name` 変数が `2.52.0` に設定されています。以下のチャレンジでは、コントローラーで `tag_name` 変数を使用します。
 
 >**❗️ 注記**
->ラボのこの段階では、パイプラインは終了しません。次回のチャレンジでは、DevOps のワークフローを引き続きご紹介します。
+>ラボのこの段階では、パイプラインは終了しません。次回のチャレンジで、DevOps のワークフローを引き続きご紹介します。
 
 ☑️ タスク 5 - ACME Corp リポジトリーの確認
 ===
