@@ -1,0 +1,149 @@
+slug: windows-ten-use-cases
+id: dkvcpwwize90
+type: track
+title: Windows 環境の自動化
+teaser: 10 の Windows 自動化ユースケース
+description: |-
+  ほとんどの組織は、さまざまな IT スタックをビジネスで使用しています。たとえば、Linux® サーバーファームがあり、Microsoft Active Directory クラスターを使用して識別サービスを提供する場合などです。また、複数ターゲット用のソフトウェアをビルドするクロスプラットフォーム環境を維持する場合も当てはまります。このように、多岐にわたるコンポーネントをそれぞれ手動で管理しようとすると、多大な手間がかかり、エラーも発生しやすくなります。Red Hat® Ansible® Automation Platform で、簡単にマルチベンダー環境を自動化しましょう。ネイティブ Microsoft Windows のサポートにより、Linux などの Linux システムと、Windows などの Windows システムを、同じ自動化ツールを使用して管理できるようになりました。このトラックでは、Red Hat Ansible Automation Platform を使用して Windows システムを自動化する 10 の方法を確認します。![Ansible と Windows のイメージ](https://www.ansible.com/hs-fs/hubfs/2015_Images/Blog/ansible-windows-blog.png?width=687&amp;height=299&amp;name=ansible-windows-blog.png) 詳細: [Ansible for Windows](https://www.ansible.com/for/windows) [**Ansible Automation Platform を今すぐ試す**](https://red.ht/try_ansible)
+icon: "https://www.ansible.com/hubfs/Logo-Red_Hat-Ansible-A-Reverse-SVG.svg"
+level: beginner
+tags:
+- windows
+owner: redhat
+developers:
+- colin@redhat.com
+private: true
+published: false
+maintenance: true
+show_timer: true
+challenges:
+- slug: ansible-inventory
+  id: fpjtr7wogx9x
+  type: challenge
+  title: WinRM を使用した接続
+  teaser: Ansible インベントリーファイルでの WinRM の使用
+  assignment: "ここで使用する Windows 2016 ホスト用インベントリーファイルはすでに作成されています。ただし、そのインベントリーファイルには、Windows ターゲットの接続と自動化に必要な主要パラメーターがいくつか欠落しています。**オプション:** インベントリーに接続する前に、1 つのホストでアドホックコマンド ( `winhost`) の実行を試行します。必ず Windows ターゲットで機能するモジュールを選択してください。インベントリーファイルにホストを追加する際のデフォルト接続プロトコルは `ssh` です。Windows ターゲットを自動化する場合、推奨される接続プロトコルは `WinRM` です。したがって、デフォルトの接続プロトコルを上書きする必要があります。"
+  notes:
+  - type: text
+    contents: |-
+      # Red Hat Ansible Automation Platform で Microsoft Windows を自動化する 10 の方法ほとんどの組織は、さまざまな IT スタックをビジネスで使用しています。たとえば、Linux® サーバーファームがあり、Microsoft Active Directory クラスターを使用して識別サービスを提供する場合などです。また、複数ターゲット用のソフトウェアをビルドするクロスプラットフォーム環境を維持する場合も当てはまります。このように、多岐にわたるコンポーネントをそれぞれ手動で管理しようとすると、多大な手間がかかり、エラーも発生しやすくなります。
+  - type: text
+    contents: Red Hat® Ansible® Automation Platform で、簡単にマルチベンダー環境を自動化しましょう。ネイティブ Microsoft Windows のサポートにより、Linux などの Linux システムと、Windows などの Windows システムを、同じ自動化ツールを使用して管理できるようになりました。
+  - type: text
+    contents: このトラックでは、Red Hat Ansible Automation Platform を使用して Windows システムを自動化する 10 の方法について確認します。
+  - type: text
+    contents: |-
+      # 最初のチャレンジAnsible による Windows ホストとの対話を可能にするWinRM は、Microsoft のビルトイン HTTP ベースのリモート管理テクノロジーです。WinRM の非対話型ログインでは、データ保護アプリケーションプログラミングインターフェイス (API) へのアクセス、ダブルホップ認証、Windows の更新など、一部のタスクの実行が困難です。Red Hat Ansible Automation Platform を使用すると、認証を体系化し、それらのリモート管理タスクを Windows で自動化できます。
+  tabs:
+  - title: Tower
+    type: service
+    hostname: tower
+    port: 443
+  - title: Tower CLI
+    type: terminal
+    hostname: tower
+  difficulty: basic
+  timelimit: 600
+- slug: powershell-and-ansible
+  id: xkdrzmhbis6x
+  type: challenge
+  title: PowerShell および Ansible の統合
+  teaser: Microsoft によりビルトイン済みの作業を活用する
+  assignment: |-
+    PowerShell は、Windows に含まれるタスクベースのコマンドラインシェルおよびスクリプト言語です。これは .NET 上にビルドされ、システムの設定、デプロイ、管理に使用する DSC (Desired State Configuration) プラットフォームへのアクセスを提供します。Red Hat Ansible Automation Platform では、別のスクリプト言語をインストールすることなく、.NET および DSC の全機能を含む新しい Windows システムを自動化できます。
+  notes:
+  - type: text
+    contents: |-
+      PowerShell は、Windows に含まれるタスクベースのコマンドラインシェルおよびスクリプト言語です。これは .NET 上にビルドされ、システムの設定、デプロイ、管理に使用する DSC (Desired State Configuration) プラットフォームへのアクセスを提供します。Red Hat Ansible Automation Platform では、別のスクリプト言語をインストールすることなく、.NET および DSC の全機能を含む新しい Windows システムを自動化できます。
+  tabs:
+  - title: Tower
+    type: service
+    hostname: tower
+    port: 443
+  difficulty: basic
+  timelimit: 500
+- slug: app-install
+  id: f3pm4dnprj8o
+  type: challenge
+  title: アプリケーションのインストールとメンテナーンス
+  teaser: Windows のパッケージ管理
+  assignment: |-
+    Windows には、パッケージ管理システムが統合されておらず、アプリケーションのディストリビューションとメンテナンスに Microsoft Store を使用します。ただし、Microsoft Store の自動化は容易ではありません。Red Hat Ansible Automation Platform は、Windows における基本的なパッケージ管理を自動化するモジュールを提供します。また、Windows 用の Chocolatey ソフトウェア管理の自動化と統合することで、自動化されたべき等パッケージ管理機能を提供します。
+  notes:
+  - type: text
+    contents: |-
+      Windows には、パッケージ管理システムが統合されておらず、アプリケーションのディストリビューションとメンテナンスに Microsoft Store を使用します。ただし、Microsoft Store の自動化は容易ではありません。Red Hat Ansible Automation Platform は、Windows における基本的なパッケージ管理を自動化するモジュールを提供します。また、Windows 用の Chocolatey ソフトウェア管理の自動化と統合することで、自動化されたべき等パッケージ管理機能を提供します。
+  difficulty: basic
+  timelimit: 500
+- slug: windows-reboots
+  id: hp9qhncmqzvq
+  type: challenge
+  title: 再起動が必要なタスク
+  teaser: 再起動を経験したことはありますか?
+  assignment: |-
+    多くの標準的な IT 機能には、Windows の再起動が必要です。しかし、タスクを自動化する場合、再起動時に特定のシステムが消えて自動化タスクが中断するため、問題が発生する可能性があります。Red Hat Ansible Automation Platform は、再起動サイクル全体でシステムを管理する方法を提供し、何回再起動しても、すべての自動化タスクが実行されるようにします。
+  notes:
+  - type: text
+    contents: |-
+      多くの標準的な IT 機能には、Windows の再起動が必要です。しかし、タスクを自動化する場合、再起動時に特定のシステムが消えて自動化タスクが中断するため、問題が発生する可能性があります。Red Hat Ansible Automation Platform は、再起動サイクル全体でシステムを管理する方法を提供し、何回再起動しても、すべての自動化タスクが実行されるようにします。
+  difficulty: basic
+  timelimit: 500
+- slug: windows-updates
+  id: ykdyzzkcthsb
+  type: challenge
+  title: Windows の更新
+  teaser: 選んだタイミングで更新を自動化
+  assignment: |-
+    更新管理は、すべての IT チームが継続的に担当する業務です。Windows Update は Windows システムのソフトウェア更新を提供し、多くの IT チームは Microsoft System Center Configuration Manager (SCCM) を使用してシステム全体で更新を管理します。ただし、SCCM は自動更新の実行 (特に再起動を実行する場合) において信頼性が低く、メンテナンス期間内での対応が困難です。Red Hat Ansible Automation Platform では、Windows Update を使用して基本的な同期更新を実行し、自動更新の信頼性を高めることができます。
+  notes:
+  - type: text
+    contents: |-
+      更新管理は、すべての IT チームが継続的に担当する業務です。Windows Update は Windows システムのソフトウェア更新を提供し、多くの IT チームは Microsoft System Center Configuration Manager (SCCM) を使用してシステム全体で更新を管理します。ただし、SCCM は自動更新の実行 (特に再起動を実行する場合) において信頼性が低く、メンテナンス期間内での対応が困難です。Red Hat Ansible Automation Platform では、Windows Update を使用して基本的な同期更新を実行し、自動更新の信頼性を高めることができます。
+  difficulty: basic
+  timelimit: 500
+- slug: automate-iis
+  id: admf7vyxhkme
+  type: challenge
+  title: インターネット情報サービス (IIS)
+  teaser: IIS 自動化モジュール
+  assignment: |-
+    IIS は Windows の拡張可能な Web サーバーです。Red Hat Ansible Automation Platform は、Web サイト、Web アプリケーション、アプリケーションプール、仮想ディレクトリーの設定などをはじめとする、IIS の基本的な自動化モジュールを提供します。
+  difficulty: basic
+  timelimit: 500
+- slug: windows-registry
+  id: xgxyadxbz60m
+  type: challenge
+  title: Windows Registry
+  teaser: べき等手法によるキー/値ペアの管理
+  assignment: |-
+    Windows Registry は、Windows オペレーティングシステムおよびアプリケーションの低レベルの設定を保存します。レジストリー値を手動で変更すると、時間がかかり、エラーが発生しやすくなります。Red Hat Ansible Automation Platform には、個別のキー/値のペアをべき等手法で管理するためのビルトイン機能が含まれています。レジストリーテンプレートを作成し、それを Windows システムのグループに自動適用することもできます。
+  difficulty: basic
+  timelimit: 500
+- slug: windows-scm
+  id: qs4xto3t0it4
+  type: challenge
+  title: Windows Service Control Manager (SCM)
+  teaser: Windows サービスの管理
+  assignment: |-
+    Windows SCM は、WinRM、IIS、ファイアウォールを含むすべての Windows サービスを管理します。Red Hat Ansible Automation Platform には、サービス制御を自動化するモジュールが含まれています。また、大規模なソフトウェアデプロイメントの一部として Windows サービスを作成し、管理することもできます。
+  difficulty: basic
+  timelimit: 500
+- slug: windows-domains
+  id: ytbtcw2bnuyl
+  type: challenge
+  title: ドメイン
+  teaser: ドメインなしでは何もできません。自動化しましょう。
+  assignment: |-
+    Windows は、ドメインを使用してエンタープライズ ID を管理します。エンタープライズ環境のシステムは、すべてドメインに属する必要があります。そのため、すべてのテストシステムをドメインに追加する必要があり、新しいソフトウェア、更新、設定のテストが困難になります。Red Hat Ansible Automation Platform では、基本的なドメインおよびドメインユーザーの管理を自動化することで、操作を単純化できます。また、一時マシンを使用した新規セットアップのテストも容易になります。使い捨てドメインを自動作成し、一時システムを追加し、テストを実行してすべてを迅速に破棄できます。
+  difficulty: basic
+  timelimit: 500
+- slug: windows-acls
+  id: a1urc4qmiovi
+  type: challenge
+  title: アクセス制御リスト (ACL)
+  teaser: 人間が判読可能なアクセス制御の定義
+  assignment: |-
+    ITチームは常にセキュリティーを念頭に置いています。Windows は、ACL を使用してユーザー、グループ、タスクのアクセス権を指定します。ビジネスを保護するためには、ACL を正しく設定することが重要です。Red Hat Ansible Automation Platform を使用すると、ACL を容易に設定および理解できます。明確で人間が判読可能なコードを使用して、ユーザーおよびグループの設定、権限の割り当て、継承動作の定義を行うことができます。
+  difficulty: basic
+  timelimit: 500
+checksum: "17372063260361470326"
