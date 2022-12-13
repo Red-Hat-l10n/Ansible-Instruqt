@@ -70,4 +70,4 @@ group_by:
 
 🐛 問題が発生しましたか?
 ====
-問題が発生した場合や、正しくない点に気付いた場合は、[チケットを作成] してください (https://github.com/ansible/instruqt/issues/new?labels=getting-started-servicenow-automation&title=New+servicenow+issue:+servicenow-inventory&assignees=cloin)。
+問題が発生した場合や、正しくない点に気付いた場合は、[チケットを作成](https://github.com/ansible/instruqt/issues/new?labels=getting-started-servicenow-automation&title=New+servicenow+issue:+servicenow-inventory&assignees=cloin)してください。
