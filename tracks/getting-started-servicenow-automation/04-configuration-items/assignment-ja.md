@@ -51,6 +51,6 @@ ServiceNow フィルターナビゲーターボックスに Linux と入力し�
 
 以下の緑色の Next ボタンを選択して、次のセクションに移動します。
 
-NORMAL で問題が発生していますか ?
+🐛 問題が発生しましたか?
 ====
 問題が発生した場合や、正しくない点に気付いた場合は、[チケットを作成] してください (https://github.com/ansible/instruqt/issues/new?labels=getting-started-servicenow-automation&title=New+servicenow+issue:+configuration-items&assignees=cloin)。
