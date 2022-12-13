@@ -47,4 +47,4 @@ ServiceNow に戻り、お気に入りの下にある `Change - Open` を選択�
 
 🐛 問題が発生しましたか?
 ====
-問題が発生した場合や、正しくない点に気付いた場合は、[チケットを作成] してください (https://github.com/ansible/instruqt/issues/new?labels=getting-started-servicenow-automation&title=New+servicenow+issue:+fix-and-close&assignees=cloin)。
+問題が発生した場合や、正しくない点に気付いた場合は、[チケットを作成](https://github.com/ansible/instruqt/issues/new?labels=getting-started-servicenow-automation&title=New+servicenow+issue:+fix-and-close&assignees=cloin)してください。
