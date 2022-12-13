@@ -45,6 +45,6 @@ timelimit: 400
 
 これですべてクリーンアップされました。次の課題に進んでください。下にある緑色の Next ボタンをクリックします。
 
-NORMAL で問題が発生していますか ?
+🐛 問題が発生しましたか?
 ====
 問題が発生した場合や、正しくない点に気付いた場合は、[チケットを作成] してください (https://github.com/ansible/instruqt/issues/new?labels=getting-started-servicenow-automation&title=New+servicenow+issue:+query-and-update-records&assignees=cloin)。
