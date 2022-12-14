@@ -1,0 +1,37 @@
+slug: private-automation-hub-signing
+id: qpj8xchyw3e4
+type: track
+title: Private Automation Hub を使用して Ansible コンテンツコレクションに署名します。
+teaser: このラボでは、Private Automation Hub を使用して Ansible Content Collections に署名し、ansible-galaxy CLI でコレクションをインストールする方法を見ていきます。
+description: |-
+  
+  # Private Automation Hub を使用したコンテンツ署名。
+  
+  ![](./assets/tech_preview.png)
+  
+  Private Automation Hub のインスタンスに発行するときに、ユーザーが作成したコンテンツやサードパーティーの Ansible コンテンツコレクションに署名します。
+  
+  `この機能は、Ansible Automation Platform v2.2 で Tech-Preview として利用できます。`
+  
+  このデモでは、以下の課題を扱います。
+  * ラボ環境について
+  * Ansible Ansible Content Collections を Private Automation Hub インスタンスに **パブリッシュ** します。
+  * Private Automation Hub UI から Ansible コンテンツコレクションに **署名して承認** します。
+  * `ansible-galaxy` CLI を使用して、**署名済みコンテンツコレクションを Private Automation Hub インスタンスからプルします**。
+  * ボーナス演習: ansible-galaxy CLI を使用して署名済みコンテンツコレクションを **検証** します。
+  
+  
+  *注:* Private Automation Hub でのコンテンツ署名の有効化は、Ansible Automation Platform インストーラーを介したインストール中に実行する必要があります。 Private Automation Hub でこれを有効にすることは、この演習の範囲外です。 ここでの焦点は、この機能を有効にした後の使用方法です。
+icon: ./assets/Product_icon-Red_Hat-Ansible-Automation_hub_private-RGB.png
+level: intermediate
+tags:
+- ansible
+- ' private-automation-hub'
+- ' ansible-galaxy'
+owner: redhat
+developers:
+- abehl@redhat.com
+private: true
+published: false
+skipping_enabled: true
+checksum: "14443779278585205995"
