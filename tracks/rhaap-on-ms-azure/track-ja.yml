@@ -1,0 +1,28 @@
+slug: rhaap-on-ms-azure
+id: 2w5zwtabxujd
+title: Microsoft Azure 上の Red Hat Ansible Automation Platform
+teaser: Ansible Automation Platform を使用して、Microsoft Azure リソースに対して自動化します。
+description: |-
+  ラボでは、以下について説明します。
+  
+  **Microsoft Azure に Red Hat Ansible Automation Platform をデプロイする方法。**
+  
+  **Microsoft Azure で Red Hat Ansible Automation Platform を使用して、Azure リソースに対して自動化します。**
+icon: ""
+level: beginner
+tags:
+- ""
+- Ansible
+- AnsibleAutomationPlatform
+- AAP
+- RHAAPoMA
+- AnsibleAutomationPlatformOnAzure
+- RedHatAnsibleAutomationPlatformOnMicrosoftAzure
+owner: redhat
+developers:
+- hmourad@redhat.com
+- seanc@redhat.com
+private: true
+published: true
+show_timer: true
+checksum: "4559198042220784187"
